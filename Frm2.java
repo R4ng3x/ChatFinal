@@ -5,6 +5,7 @@
  */
 package ChatFinal;
 
+import java.awt.*;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -12,6 +13,7 @@ public class Frm2 extends javax.swing.JFrame implements Observer {
     
     public Frm2() {
         initComponents();
+        this.getContentPane().setBackground(Color.pink);
         this.getRootPane().setDefaultButton(this.btnEnviar);
         Servidor s = new Servidor(6000);
         s.addObserver(this);
